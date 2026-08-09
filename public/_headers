@@ -1,0 +1,20 @@
+# Cache rules.
+#
+# The bug this prevents: index.html names the bundle by content hash. If a
+# browser caches the HTML and we then deploy, the old hash no longer exists,
+# the SPA fallback answers with index.html instead, and the page dies on
+# "Unexpected token '<'" — a white screen with no explanation, in Aleppo,
+# on the one machine we cannot debug.
+#
+# Cloudflare already serves HTML as max-age=0, must-revalidate, which is
+# exactly right — so the HTML needs no rule here. Only the hashed assets do,
+# and for them the hash IS the version, which is what makes "forever" safe.
+#
+# Do NOT add a broad /admin/* rule: every matching rule is applied, so it
+# would stamp no-cache onto these files as well and undo the whole point.
+
+/admin/_expo/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/admin/assets/*
+  Cache-Control: public, max-age=31536000, immutable
