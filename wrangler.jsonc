@@ -1,0 +1,11 @@
+{
+  // Static-assets Worker: no server code, just the download page.
+  // Cloudflare folded Pages into Workers, so a plain site now ships this way.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "natour-app",
+  "compatibility_date": "2026-08-09",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "single-page-application"
+  }
+}
