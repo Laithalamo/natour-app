@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الناطور — تحميل التطبيقات</title>
+<meta name="description" content="حمّل تطبيقات الناطور: برنامج الكاشير لويندوز وتطبيق المالك لأندرويد.">
+<meta name="theme-color" content="#1E5748">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rakkas&family=Noto+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='10' r='5' fill='%23D9982F'/%3E%3Cpath d='M10 18 L10 28 A14 14 0 0 0 38 28 L38 18 L32 18 L32 28 A8 8 0 0 1 16 28 L16 18 Z' fill='%231E5748'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --paper:#F6F2EA; --surface:#FFFDFA; --ink:#26221C; --ink-2:#5C5347;
+    --line:#E3DCCE; --brand:#1E5748; --brand-ink:#F6F2EA; --accent:#D9982F;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --paper:#161D19; --surface:#1E2721; --ink:#F0EBE1; --ink-2:#B3A996;
+           --line:#35403A; --brand:#83C2A6; --brand-ink:#12241C; --accent:#DCAE5D; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:'Noto Sans Arabic','Segoe UI',Tahoma,sans-serif;
+    line-height:1.7; -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:760px; margin-inline:auto; padding:32px 20px 64px}
+  header{text-align:center; margin-block-end:40px}
+  .mark{width:88px; height:88px}
+  h1{font-family:'Rakkas',serif; font-size:44px; margin:12px 0 4px; color:var(--brand); font-weight:400}
+  .tag{color:var(--ink-2); font-size:17px; margin:0}
+  .cards{display:grid; gap:18px}
+  @media (min-width:640px){ .cards{grid-template-columns:1fr 1fr} }
+  .card{
+    background:var(--surface); border:1px solid var(--line); border-radius:14px;
+    padding:24px; display:flex; flex-direction:column; gap:12px;
+  }
+  .card h2{font-size:21px; margin:0; display:flex; align-items:center; gap:10px}
+  .card p{margin:0; color:var(--ink-2); font-size:15px; flex:1}
+  .icon{width:30px; height:30px; flex-shrink:0}
+  .btn{
+    display:block; text-align:center; text-decoration:none; font-weight:700; font-size:17px;
+    background:var(--brand); color:var(--brand-ink); padding:15px 20px; border-radius:10px;
+    transition:opacity .15s;
+  }
+  .btn:hover{opacity:.9}
+  .btn.soon{background:transparent; color:var(--ink-2); border:1px dashed var(--line); font-weight:500; cursor:default}
+  .meta{font-size:13px; color:var(--ink-2); text-align:center; margin:0}
+  .note{
+    margin-block-start:36px; background:var(--surface); border:1px solid var(--line);
+    border-radius:14px; padding:20px 24px;
+  }
+  .note h3{margin:0 0 8px; font-size:17px}
+  .note ol{margin:0; padding-inline-start:22px; color:var(--ink-2); font-size:15px}
+  footer{margin-block-start:40px; text-align:center; color:var(--ink-2); font-size:14px}
+  footer a{color:var(--brand)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <svg class="mark" viewBox="0 0 48 48" role="img" aria-label="شعار الناطور">
+      <circle cx="24" cy="10" r="5" fill="var(--accent)"></circle>
+      <path d="M10 18 L10 28 A14 14 0 0 0 38 28 L38 18 L32 18 L32 28 A8 8 0 0 1 16 28 L16 18 Z" fill="var(--brand)"></path>
+    </svg>
+    <h1>الناطور</h1>
+    <p class="tag">عينك على المحل — نظام الكاشير والمراقبة</p>
+  </header>
+
+  <main class="cards">
+
+    <section class="card">
+      <h2>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="13" rx="2"></rect><path d="M8 21h8M12 17v4"></path>
+        </svg>
+        برنامج الكاشير
+      </h2>
+      <p>لجهاز الكمبيوتر في المحل (ويندوز). يعمل بدون إنترنت: بيع، ورديات، جرد، تقارير.</p>
+      <span class="btn soon">قريباً</span>
+      <p class="meta">ويندوز ١٠ أو أحدث</p>
+    </section>
+
+    <section class="card">
+      <h2>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="6" y="2" width="12" height="20" rx="2"></rect><path d="M11 18h2"></path>
+        </svg>
+        تطبيق المالك
+      </h2>
+      <p>لموبايل صاحب المحل (أندرويد). تابع المبيعات وتسليم الوردية والأرباح من أي مكان.</p>
+      <a class="btn" href="https://github.com/Laithalamo/natour-app/releases/latest/download/natour-owner.apk">تحميل للأندرويد</a>
+      <p class="meta">أندرويد ٧ أو أحدث · ٦٢ ميغابايت</p>
+    </section>
+
+  </main>
+
+  <div class="note">
+    <h3>تثبيت تطبيق الأندرويد</h3>
+    <ol>
+      <li>اضغط «تحميل للأندرويد» — سينزّل ملف بامتداد <code>.apk</code>.</li>
+      <li>افتح الملف. سيسألك الأندرويد السماح بالتثبيت من مصدر غير معروف — اضغط «سماح».</li>
+      <li>اضغط «تثبيت»، ثم افتح التطبيق وسجّل الدخول ببريدك وكلمة المرور.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <p>الناطور · جميع الإصدارات على <a href="https://github.com/Laithalamo/natour-app/releases">صفحة الإصدارات</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
